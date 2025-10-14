@@ -1,0 +1,21 @@
+@startuml
+autonumber
+
+skinparam sequence {
+ArrowColor gray
+ActorBorderColor gray
+LifeLineBorderColor black
+}
+skinparam shadowing false
+hide footbox
+
+participant 醫院 #d1ebf1
+participant NHI  #cadaa9
+醫院 -> NHI: 醫院上傳NGS檢測結果報告（Bundle TWNGS）
+
+alt 上傳成功
+    醫院 ->NHI : 若資料符合格式，健保署回覆上傳成功訊息，由醫院查詢上傳結果
+else 上傳失敗
+    醫院 -> NHI: 若資料不符合格式，健保署回覆上傳失敗訊息，由醫院查詢上傳結果
+end
+@enduml
