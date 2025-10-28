@@ -1,4 +1,4 @@
-CodeSystem: NHIOrganization
+CodeSystem: NHIOrganizationCodes
 Id: organization-identifier-tw
 Title: "NHI-健保署-特約醫事機構"
 Description: "臺灣衛生福利部中央健康保險署「特約醫事機構」代碼，參照至[衛福部健保署特約醫事機構代碼網路查詢服務](https://www.nhi.gov.tw/ch/cp-5548-135e8-2931-1.html)中的[健保特約醫療院所名冊](https://info.nhi.gov.tw/IODE0000/IODE0000S09?id=1120)
@@ -36765,4 +36765,4 @@ Description: "NHI-健保署-特約醫事機構值集，參照至[衛福部健保
 * ^date = "2024-08-19"
 * ^version = "2024-08-19"
 * ^experimental = false
-* include codes from system NHIOrganization
+* include codes from system NHIOrganizationCodes

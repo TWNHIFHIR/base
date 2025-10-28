@@ -29,7 +29,11 @@ dependencies:
     id: TWCore
     uri: https://twcore.mohw.gov.tw/ig/twcore/ImplementationGuide/tw.gov.mohw.twcore
     version: 0.3.2
-
+   hl7.fhir.us.davinci-pas:
+    id: DaVinciPriorAuthorizationSupport
+    uri: http://hl7.org/fhir/us/davinci-pas/ImplementationGuide/hl7.fhir.us.davinci-pas
+    #version: 2.0.1
+    version: 2.1.0
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can

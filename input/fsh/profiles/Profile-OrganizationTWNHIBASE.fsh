@@ -23,5 +23,22 @@ Description:    "此基因檢測機構-Organization Gene TWNHIBASE Profile說明
 * identifier ^short = "基因檢測機構，衛福部公告名冊或LDTs核定函上之「案件編號」。"
 * identifier.system = "https://dep.mohw.gov.tw"
 
-* identifier.system ^example[0].valueUri = "https://dep.mohw.gov.tw"
+* identifier.system ^example[0].valueUri = "https://dep.mohw.gov.tw/DOMA/ngs-org"
 * identifier.value ^example[0].valueString = "2023LDTB0002"
+* identifier.value ^example[=].label = "12碼"
+* identifier.value ^example[+].valueString = "2024LDT2717"
+* identifier.value ^example[=].label = "11碼"
+* identifier.value ^example[+].valueString = "CAP"
+* identifier.value ^example[=].label = "1"
+* identifier.value ^example[+].valueString = "TAF"
+* identifier.value ^example[=].label = "2"
+* identifier.value ^example[+].valueString = "TFDA"
+* identifier.value ^example[=].label = "3"
+* identifier.value ^example[+].valueString = "TSP"
+* identifier.value ^example[=].label = "4"
+* identifier obeys ngs-org
+
+Invariant:   ngs-org
+Description: "可填11碼或12碼，或4個文字擇一(CAP、TAF、TFDA、TSP)"
+Expression:  "value.toString().matches('^(?!CAP$|TAF$|TFDA$|TSP$)[A-Za-z0-9]{11,12}$|^(CAP|TAF|TFDA|TSP)$')"
+Severity:    #error

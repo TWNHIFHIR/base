@@ -26,7 +26,7 @@ Description:    "此病人資訊-Patient TWNHIBASE Profile說明本IG如何進�
 
 
 Invariant:   pat-name
-Description: "病人姓名有誤 ，超過40字"
+Description: "病人姓名有誤，超過40字"
 Expression:  "text.length() <= 40"
 Severity:    #error
 
