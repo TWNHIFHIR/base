@@ -1,6 +1,6 @@
 CodeSystem: NHIPDFTypeCodes
 Id: nhi-pdf-type
-Title: "NHI-健保事前審查-文件類型"
+Title: "NHI-健保署-文件類型"
 Description: "臺灣衛生福利部中央健康保險署「文件類型」代碼，代碼出版日期：2025-10-01；資料所屬單位：臺灣衛生福利部中央健康保險署。"
 * ^caseSensitive = true
 * ^content = #complete
@@ -14,8 +14,8 @@ Description: "臺灣衛生福利部中央健康保險署「文件類型」代碼
 
 ValueSet: NHIPDFType
 Id: nhi-pdf-type
-Title: "NHI-健保事前審查-文件類型值集"
-Description: "NHI-健保事前審查-文件類型值集"
+Title: "NHI-健保署-文件類型值集"
+Description: "NHI-健保署-文件類型值集"
 * ^date = "2025-10-01"
 * ^version = "1.0.9"
 * ^experimental = false

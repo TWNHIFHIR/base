@@ -1,8 +1,8 @@
 Alias: $loinc = http://loinc.org
 ValueSet: GeneTestCode
 Id: gene-test-code
-Title: "LOINC-健保事前審查-基因檢測代碼值集"
-Description: "LOINC-健保事前審查-基因檢測代碼值集"
+Title: "LOINC-健保署-基因檢測代碼值集"
+Description: "LOINC-健保署-基因檢測代碼值集"
 * ^date = "2025-10-01"
 * ^version = "1.0.9"
 * ^experimental = false

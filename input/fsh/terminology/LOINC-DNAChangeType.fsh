@@ -1,7 +1,7 @@
 ValueSet: DNAChangeType
 Id: dna-change-type
-Title: "LOINC-健保事前審查-基因突變類型值集"
-Description: "LOINC-健保事前審查-基因突變類型值集"
+Title: "LOINC-健保署-基因突變類型值集"
+Description: "LOINC-健保署-基因突變類型值集"
 * ^date = "2025-10-01"
 * ^version = "1.0.9"
 * ^experimental = false
@@ -21,8 +21,8 @@ Description: "LOINC-健保事前審查-基因突變類型值集"
 
 CodeSystem: INCaOsiris
 Id: inca-osiris
-Title: "INCa-健保事前審查-基因突變類型"
-Description: "INCa-健保事前審查-基因突變類型，資料所屬單位：Institut National du Cancer (INCa)，參照至：https://github.com/InstitutNationalduCancer/OSIRIS。"
+Title: "INCa-健保署-基因突變類型"
+Description: "INCa-健保署-基因突變類型，資料所屬單位：Institut National du Cancer (INCa)，參照至：https://github.com/InstitutNationalduCancer/OSIRIS。"
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2025-10-01"

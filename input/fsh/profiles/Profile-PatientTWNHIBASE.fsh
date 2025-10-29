@@ -6,8 +6,8 @@ Description:    "此病人資訊-Patient TWNHIBASE Profile說明本IG如何進�
 
 * identifier 1..2 MS
 * identifier[idCardNumber] 1..1
-* identifier[residentNumber] 0..0
-* identifier[passportNumber] 0..0
+/* identifier[residentNumber] 0..0
+* identifier[passportNumber] 0..0 */
 
 * name obeys pat-name
 * name 1..1 MS

@@ -19,7 +19,8 @@ Description:    "此事前審查-Claim TWNHIBASE Profile說明本IG如何進一�
 * subType.coding.system 1..1
 * subType.coding.system = "https://nhicore.nhi.gov.tw/base/CodeSystem/nhi-apply-type"
 * subType.coding.code 1..1
-* subType.coding.code ^short = "申報類別，1:送核 | 2:送核補件 | 3:申復 | 4:爭議審議 | 5:申復補件 。當申報類別為2(送核補件)、3(申復)、4(爭議審議)、5(申復補件)時，院所才需於Claim.identifier填寫原送核案件之受理編號。"
+* subType.coding.code ^short = "申報類別，1:送核 | 2:送核補件 | 3:申復 | 4:爭議審議 | 5:申復補件 。"
+//當申報類別為2(送核補件)、3(申復)、4(爭議審議)、5(申復補件)時，院所才需於Claim.identifier填寫原送核案件之受理編號。"
 //* enterer 1..1
 //* enterer only Reference(PractitionerTWPAS)
 * priority from NHITMHBType
@@ -48,10 +49,10 @@ Description:    "此事前審查-Claim TWNHIBASE Profile說明本IG如何進一�
     http://hl7.org/fhir/us/davinci-pas/StructureDefinition/extension-diagnosisRecordedDate named recordedDate 0..* MS
 * diagnosis.type 0..1
 * diagnosis.type.text 0..1 MS
-* diagnosis.type.text obeys pas-2
+//* diagnosis.type.text obeys pas-2
 * supportingInfo ^slicing.discriminator.type = #value
 * supportingInfo ^slicing.discriminator.path = "category"
-* supportingInfo ^slicing.rules = #closed
+* supportingInfo ^slicing.rules = #open
 * supportingInfo.category from NHIPASSupportingInfoType
 * supportingInfo contains
     geneInfo 0..*
@@ -239,10 +240,12 @@ Description:    "此事前審查-Claim TWNHIBASE Profile說明本IG如何進一�
 */
 //* identifier ^short = "原受理編號。院所上傳送核(subType = #1)案件時，不需填寫「原受理編號」資訊，受理成功後會由系統自動產生受理編號。當Claim.subType(申報類別)為2(送核補件)、3(申復)、4(爭議審議)或5(申復補件)時，院所才需於Claim.identifier填寫原送核案件之受理編號。"
 * provider ^short = "醫事機構代碼，必須存在於醫事機構基本資料檔內。"
-* subType ^short = "申報類別，1:送核 | 2:送核補件 | 3:申復 | 4:爭議審議 | 5:申復補件 。院所上傳送核(subType = #1)案件時，不需填寫「原受理編號」資訊，受理成功後會由系統自動產生受理編號。當Claim.subType(申報類別)為2(送核補件)、3(申復)、4(爭議審議)或5(申復補件)時，院所才需於Claim.identifier填寫原送核案件之受理編號。"
+* subType ^short = "申報類別，1:送核 | 2:送核補件 | 3:申復 | 4:爭議審議 | 5:申復補件 。" 
+//院所上傳送核(subType = #1)案件時，不需填寫「原受理編號」資訊，受理成功後會由系統自動產生受理編號。當Claim.subType(申報類別)為2(送核補件)、3(申復)、4(爭議審議)或5(申復補件)時，院所才需於Claim.identifier填寫原送核案件之受理編號。"
 //* extension[encounter] ^short = "就醫科別，為細分科之就醫科別，作為審查分科用。【此為參考Da Vinci PAS IG的extension設計】"
 //* enterer ^short = "申請醫師，必須存在於醫事人員基本資料檔內，並於合約生效起迄日內。"
-* created ^short = "申請日期，YYYY-MM-DD，機構自填。健保署收案後另建受理日期，將呈現在ClaimResponse的disposition和created欄位。"
+* created ^short = "申請日期，YYYY-MM-DD，機構自填。"
+//健保署收案後另建受理日期，將呈現在ClaimResponse的disposition和created欄位。"
 * priority ^short = "申請案件類別，1:一般事前審查申請 | 3:自主審查 | 4:緊急報備；專審系統識別用，對應PXXT_CODE(TMHB,001)。"
 * patient ^short = "病人資訊"
 /** supportingInfo.sequence ^short = "因FHIR設計而必填、自動流水號（建議每次加1）、不得重複，作為每筆supportingInfo的唯一識別碼。最後一筆sequence號碼即表示總筆數。"
@@ -260,7 +263,8 @@ Description:    "此事前審查-Claim TWNHIBASE Profile說明本IG如何進一�
 * supportingInfo[carePlanDocument].valueReference ^short = "治療計畫文件"
 * supportingInfo[treatmentAssessment].valueReference ^short = "結果資訊" */
 * diagnosis.diagnosisCodeableConcept ^short = "國際疾病分類代碼(含共病)，當前疾病狀態。ICD-10-CM。"
-* diagnosis.extension[recordedDate] ^short = "診斷日期，sequence=1時為必填，表示為用藥事前審查之主要疾病；其他共病不須填寫診斷日期。YYYY-MM-DD，西元年月日。【此為參考Da Vinci PAS IG的extension設計】"
+* diagnosis.extension[recordedDate] ^short = "診斷日期，YYYY-MM-DD，西元年月日。【此為參考Da Vinci PAS IG的extension設計】"
+//sequence=1時為必填，表示為用藥事前審查之主要疾病；其他共病不須填寫診斷日期。
 * diagnosis.type.text ^short = "簡要病摘(申請理由)。連結院內HIS系統之簡要病摘，或填寫原事前審查之申請理由。請勿將醫事機構名稱、病人及醫師姓名等資訊列入結果中上傳，且不得包含HTML或XML等語法。"
 * diagnosis ^short = "sequence=1時為主要疾病；sequence>=2代表共病。"
 * diagnosis.sequence ^short = "sequence=1時為主要疾病；sequence>=2代表共病。"
@@ -279,8 +283,8 @@ Description:    "此事前審查-Claim TWNHIBASE Profile說明本IG如何進一�
 
 /* supportingInfo[weight].valueQuantity.value obeys HTWT
 * supportingInfo[height].valueQuantity.value obeys HTWT*/
-* diagnosis obeys diagnosis //and sequence-1
-* . obeys sequence-1
+/* diagnosis obeys diagnosis //and sequence-1
+* . obeys sequence-1 */
 //* . obeys sequence-1 and supportingInfo and applType
 /** item.programCode obeys pas-1 */
 
@@ -297,15 +301,15 @@ Description: "整數至多3位數及小數至多2位數"
 Expression:  "value.toString().matches('^[0-9]{1,3}(.[0-9]{1,2})?$')"
 Severity:    #error */
 
-Invariant:   diagnosis
+/*Invariant:   diagnosis
 Description: "diagnosis.sequence=1時才需填寫診斷日期、簡要病摘(申請原因)"
 Expression:  "sequence=1 implies (extension.where(url = 'http://hl7.org/fhir/us/davinci-pas/StructureDefinition/extension-diagnosisRecordedDate').value.ofType(date).exists() and type.text.exists() )"
-Severity:    #error
+Severity:    #error */
 
-Invariant:   sequence-1
+/*Invariant:   sequence-1
 Description: "diagnosis.sequence一定會有一個「1」，且只能出現一次。"
 Expression:  "diagnosis.where(sequence = 1).count() = 1"
-Severity:    #error
+Severity:    #error */
 
 /*Invariant:   supportingInfo
 Description: "當Claim.priority(案件類別)為1(一般事前審查申請)、3(自主審查)時，至少還需提供檢查報告、影像報告、基因資訊中任一樣資訊。"
@@ -322,7 +326,7 @@ Description: "text、coding至少需存在一個。"
 Expression:  "text.exists() or coding.exists()"
 Severity:    #error */
 
-Invariant:   pas-2
+/*Invariant:   pas-2
 Description: "長度不得超過4000 bytes。"
 Expression:  "toString().length() <= 4000"
-Severity:    #error
+Severity:    #error */
