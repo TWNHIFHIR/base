@@ -22,7 +22,7 @@ Usage: #example
     <p><b>基因報告名稱</b>：GenReport01</p>
 </div>"
 
-Instance: doc-careplan-min
+/*Instance: doc-careplan-min
 InstanceOf: DocumentReferenceTWNHIBASE
 Title: "治療計畫文件"
 Description: "依據文件參照-DocumentReference TWNHIBASE Profile呈現治療計畫文件之範例"
@@ -101,4 +101,4 @@ Usage: #example
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a> &quot;王大明&quot;</p>
     <p><b>病歷資料 (application/pdf)</b>：file://王大明病歷.pdf</p>
     <p><b>病歷資料名稱</b>：王大明病歷</p>
-</div>"
+</div>" */

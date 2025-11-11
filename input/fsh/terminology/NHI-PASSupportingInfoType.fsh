@@ -5,7 +5,7 @@ Description: "臺灣衛生福利部中央健康保險署「補充資訊類別」
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2025-10-01"
-* ^version = "1.0.9"
+* ^version = "0.0.1"
 * ^experimental = false
 * #geneInfo "基因資訊"
 
@@ -15,6 +15,6 @@ Id: nhi-supporting-info-type
 Title: "NHI-健保署-補充資訊類別值集"
 Description: "NHI-健保署-補充資訊類別值集"
 * ^date = "2025-10-01"
-* ^version = "1.0.9"
+* ^version = "0.0.1"
 * ^experimental = false
 * include codes from system NHIPASSupportingInfoTypeCodes

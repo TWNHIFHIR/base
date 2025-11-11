@@ -23,3 +23,6 @@ INFORMATION: StructureDefinition/Patient-twnhibase: StructureDefinition.snapshot
 
 # 提醒slice雖有多筆，但實際只能填一筆，不影響驗證。（INFORMATION後方的 藍色字樣(1uses) 是指INFORMATION在此Profile中有被使用到）
 The slice definition for Patient.identifier has a maximum of 2 but the slices add up to a maximum of 4. Check that this is what is intended
+
+# 邏輯模型的mapping，不影響驗證。
+% The html source has duplicate anchor Ids%

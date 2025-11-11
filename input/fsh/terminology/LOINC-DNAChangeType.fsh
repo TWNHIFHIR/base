@@ -3,7 +3,7 @@ Id: dna-change-type
 Title: "LOINC-健保署-基因突變類型值集"
 Description: "LOINC-健保署-基因突變類型值集"
 * ^date = "2025-10-01"
-* ^version = "1.0.9"
+* ^version = "0.0.1"
 * ^experimental = false
 * $loinc#LA6692-3 "Deletion"
 * $loinc#LA6686-5 "Duplication"
@@ -12,7 +12,8 @@ Description: "LOINC-健保署-基因突變類型值集"
 * $loinc#LA6689-9 "Inversion"
 * $loinc#LA6690-7 "Substitution"
 * https://nhicore.nhi.gov.tw/base/CodeSystem/inca-osiris#O55-2 "Delins"
-* $loinc#101397-8 "Copy number variation analysis Sequencing Doc (Bld/Tiss)"
+* $loinc#101397-8 "Copy number variation analysis in Blood or Tissue by Sequencing"
+//* $loinc#101397-8 "Copy number variation analysis Sequencing Doc (Bld/Tiss)"
 * $loinc#81695-9 "MSI Ca spec-Imp"
 * $loinc#94077-5 "TMB Tumor-Imp"
 // 2025-09-18 add
@@ -26,6 +27,6 @@ Description: "INCa-健保署-基因突變類型，資料所屬單位：Institut 
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2025-10-01"
-* ^version = "1.0.9"
+* ^version = "0.0.1"
 * ^experimental = false
 * #O55-2 "Delins"

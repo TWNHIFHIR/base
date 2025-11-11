@@ -1,7 +1,7 @@
 Instance: cla-1
 InstanceOf: ClaimTWNHIBASE
-Title: "事前審查-送核、套組檢驗、多事前審查癌藥品項"
-Description: "依據事前審查-Claim TWNHIBASE Profile呈現健保署基礎事前審查之範例，含兩筆檢驗(查)。"
+Title: "事前審查-送核"
+Description: "依據事前審查-Claim TWNHIBASE Profile呈現健保署基礎事前審查之範例。"
 Usage: #example
 //* identifier.value = "20240831010109051701"
 //* extension[encounter].valueReference.reference = "Encounter/enc-min"

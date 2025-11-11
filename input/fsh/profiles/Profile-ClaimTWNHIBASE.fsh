@@ -48,7 +48,7 @@ Description:    "此事前審查-Claim TWNHIBASE Profile說明本IG如何進一�
 * diagnosis.extension contains 
     http://hl7.org/fhir/us/davinci-pas/StructureDefinition/extension-diagnosisRecordedDate named recordedDate 0..* MS
 * diagnosis.type 0..1
-* diagnosis.type.text 0..1 MS
+* diagnosis.type.text 1..1 MS
 //* diagnosis.type.text obeys pas-2
 * supportingInfo ^slicing.discriminator.type = #value
 * supportingInfo ^slicing.discriminator.path = "category"
