@@ -13,8 +13,8 @@
 
 <div  style="padding-left: 10px;"> 
 
-<p>衛生福利部中央健康保險署。</p>
-
+<p>衛生福利部中央健康保險署配合賴總統於健康台灣之「國家癌症防治計畫」政策，推動NGS申報資料收載、癌症重大傷病申請、癌藥事前審查申請及癌症個案療效追蹤等癌症醫療資訊之數位轉型，並以HL7 FHIR為核心技術架構，陸續建置「臺灣健保癌症用藥事前審查實作指引（TWPAS IG）」、「臺灣重大傷病實作指引（TWCI IG）」及「臺灣次世代基因定序檢測實作指引（TWNGS IG）」等三項實作指引，期透過資料有效互通，達成以病人為中心之完整照護。</p>
+<p>為確保健保署各實作指引間之資料結構一致、欄位定義共用、命名規則統一，並促進跨情境資料交換與延展應用，健保署建立「臺灣健保署基礎實作指引（TWNHIBASE IG）」作為所有實作指引之共同基礎。TWNHIBASE IG整合健保署各業務情境中重複出現之共通欄位與結構，統一定義共用的FHIR Profiles與專門術語，以提升資料重用性與一致性，透過本指引，健保署可提供統一且可延展的資料架構，供各情境實作指引引用與擴充，降低重複開發與維護成本，並推動健保資料交換標準化與智慧醫療生態系的長期發展，期以強化資料整合與應用能量，建構完善的精準醫療環境，提升醫療照護之效率與品質。</p>
 </div>
 
 
@@ -55,31 +55,60 @@
 </div>
 
 ### 作者與貢獻者
-<table class="grid" style="width:100%">
-<thead>
-<tr class="header">
-<th style="width:10%">角色</th>
-<th style="width:10%">姓名</th>
-<th style="width:40%">機構</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>作者-IG</td>
-<td>李麗惠</td>
-<td rowspan="4" style="vertical-align: middle;">國立臺北護理健康大學-健康事業管理系</td>
-</tr>
-<tr>
-<td>作者-IG</td>
-<td>李奇安</td>
-</tr>
-<tr>
-<td>作者-IG</td>
-<td>曾鈺珈</td>
-</tr>
-<tr>
-<td>作者-IG</td>
-<td>林伃瑤</td>
-</tr>
-</tbody>
+<table class="grid">
+    <thead>
+        <tr class="header">
+            <th style="width:10%">角色</th>
+            <th style="width:30%">姓名</th>
+            <th style="width:50%">機構</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="vertical-align: middle;">作者-IG</td>
+            <td style="vertical-align: middle;">李麗惠</td>
+            <td rowspan="4" style="vertical-align: middle;">國立臺北護理健康大學-健康事業管理系</td>
+        </tr>
+        <tr>
+            <td>作者-IG</td>
+            <td>曾鈺珈</td>
+        </tr>
+		<tr>
+            <td>作者-IG</td>
+            <td>李奇安</td>
+        </tr>
+		<tr>
+            <td>作者-IG</td>
+            <td>林伃瑤</td>
+        </tr>
+        <tr>
+            <td>貢獻者-IG</td>
+            <td>張如薰</td>
+            <td rowspan="4" style="vertical-align: middle;">衛生福利部中央健康保險署-醫審及藥材組</td>
+        </tr>
+        <tr>
+            <td>貢獻者-IG</td>
+            <td>涂奇君</td>
+        </tr>
+        <tr>
+            <td>貢獻者-IG</td>
+            <td>張佐安</td>
+        </tr>
+        <tr>
+            <td>貢獻者-IG</td>
+            <td>鄧嘉欣</td>
+        </tr>
+        <tr>
+            <td>貢獻者-IG</td>
+            <td colspan="2">醫藥品查驗中心(CDE)</td>
+        </tr>
+        <tr>
+            <td>貢獻者-IG</td>
+            <td colspan="2">衛生福利部中央健康保險署-資訊組</td>
+        </tr>
+        <tr>
+            <td>貢獻者-IG</td>
+            <td colspan="2">衛生福利部資訊處</td>
+        </tr>
+    </tbody>
 </table>
