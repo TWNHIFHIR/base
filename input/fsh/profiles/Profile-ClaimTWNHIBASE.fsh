@@ -12,7 +12,7 @@ Description:    "此事前審查-Claim TWNHIBASE Profile說明本IG如何進一�
 
 * provider 1..1
 * provider only Reference(OrganizationTWNHIBASE)
-* type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
+//* type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
 * subType 1..1
 * subType from NHIApplyType
 * subType.coding 1..1
@@ -25,7 +25,7 @@ Description:    "此事前審查-Claim TWNHIBASE Profile說明本IG如何進一�
 //* enterer only Reference(PractitionerTWPAS)
 * priority from NHITMHBType
 //* status = http://hl7.org/fhir/fm-status#active
-* use = http://hl7.org/fhir/claim-use#preauthorization
+//* use = http://hl7.org/fhir/claim-use#preauthorization
 * patient only Reference(PatientTWNHIBASE)
 * diagnosis 1.. MS
 * diagnosis.diagnosis[x] MS
