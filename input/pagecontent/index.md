@@ -66,11 +66,11 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td style="vertical-align: middle;">作者-IG</td>
-            <td style="vertical-align: middle;">李麗惠</td>
-            <td rowspan="4" style="vertical-align: middle;">國立臺北護理健康大學-健康事業管理系</td>
-        </tr>
+		<tr>
+            <td>作者-IG</td>
+            <td>林伃瑤</td>
+            <td rowspan="3" style="vertical-align: middle;">資拓宏宇</td>
+        </tr>        
         <tr>
             <td>作者-IG</td>
             <td>曾鈺珈</td>
@@ -78,10 +78,6 @@
 		<tr>
             <td>作者-IG</td>
             <td>李奇安</td>
-        </tr>
-		<tr>
-            <td>作者-IG</td>
-            <td>林伃瑤</td>
         </tr>
         <tr>
             <td>貢獻者-IG</td>
