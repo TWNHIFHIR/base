@@ -26,3 +26,6 @@ The slice definition for Patient.identifier has a maximum of 2 but the slices ad
 
 # 邏輯模型的mapping，不影響驗證。
 % The html source has duplicate anchor Ids%
+
+# 最新版本的代碼不齊全，無法直接繼承，故先繼續使用0.3.2版
+% The ImplementationGuide uses package tw.gov.mohw.twcore#0.3.2%
