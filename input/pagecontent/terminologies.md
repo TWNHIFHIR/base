@@ -4,5 +4,4 @@
 ### 值集(Value Sets)
 {% include table-valuesets.xhtml %}
 
-### 代碼系統(Code Systems)
-{% include table-codesystems.xhtml %}
+
