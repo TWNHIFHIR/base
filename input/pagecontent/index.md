@@ -1,8 +1,3 @@
-<div class="bg-success" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-</div>
-
-
-
 
 ### 專案介紹
 <div  style="padding-left: 10px;"> 
