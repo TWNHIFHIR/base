@@ -36,15 +36,12 @@ Description:    "此基因資訊-Observation Diagnostic TWNHIBASE Profile說明�
 * component[gene-test-code].value[x] ^short = "基因檢測實際結果"
 * component[gene-test-code].interpretation 0..1 MS
 * component[gene-test-code].interpretation from DNAChangeType (extensible)
-//* component[gene-test-code].interpretation obeys pas-1
 * component[gene-test-code].interpretation.coding.code 1..1
 * component[gene-test-code].interpretation ^short = "基因突變類型"
 * component[gene-test-code].interpretation ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
 * component[gene-test-code].interpretation ^definition = "Type of DNA change observed. Convenience property for variants with exact breakpoints, required otherwise."
 * component[gene-test-code].interpretation.coding.code ^short = "LA6692-3: Deletion | LA6686-5: Duplication | LA6687-3: Insertion | LA6688-1: Insertion/Deletion | LA6689-9: Inversion | LA6690-7: Substitution | 101397-8: Copy number variation analysis Sequencing Doc (Bld/Tiss) | 81695-9: MSI Ca spec-Imp | 94077-5: TMB Tumor-Imp | O55-2: Delins"
 * component[gene-test-code].interpretation.text ^short = "基因突變類型。若無合適代碼，可使用此欄位以文字呈現。請勿將醫事機構名稱、病人及醫師姓名等資訊列入結果中上傳，且不得包含HTML或XML等語法。"
-//* component[gene-test-code].interpretation.text ^condition = "pas-1"
-//* component[gene-test-code].interpretation.coding ^condition = "pas-1"
 
 * value[x] 1..1 MS
 * value[x] only string
