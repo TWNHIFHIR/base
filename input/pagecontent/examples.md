@@ -21,7 +21,7 @@
 - [病人資訊](Patient-pat-min.html)：依據病人資訊-Patient TWNHIBASE Profile呈現病人資訊之範例
 
 #### Practitioner
-- [醫事人員](Practitioner-pat-min.html)：依據醫事人員-Practitioner TWNHIBASE Profile呈現醫事人員之範例
+- [醫事人員](Practitioner-pra-min.html)：依據醫事人員-Practitioner TWNHIBASE Profile呈現醫事人員之範例
 
 #### Specimen
 - [基因檢測檢體](Specimen-spe-min.html)：依據基因檢測檢體-Specimen TWNHIBASE Profile呈現基因檢測檢體之範例
