@@ -439,7 +439,32 @@ Usage: #definition
     </div>
     <div class=\"panel panel-default\">
         <div class=\"panel-heading\">
-            <h4 id=\"Observation1-4\" class=\"panel-title\"><span style=\"float: right;\">預期的遵從度： 建議應該（SHOULD）</span>Observation</h4>
+            <h4 id=\"Practitioner1-4\" class=\"panel-title\"><span style=\"float: right;\">預期的遵從度： 建議應該（SHOULD）</span>Observation</h4>
+        </div>
+        <div class=\"panel-body\">
+            <div class=\"container\">
+                <div class=\"row\">
+                    <div class=\"col-lg-7\"><span class=\"lead\">Profile</span><br /><a href=\"StructureDefinition-Practitioner-twnhibase.html\">醫事人員-Practitioner-twnhibase</a>
+                    </div>
+                    <div class=\"col-lg-5\"><span class=\"lead\">支援的參照政策（Reference policy）</span><br /><code>resolves</code>
+                    </div>
+                </div>
+                <p />
+                <div class=\"row\">
+                    <div class=\"col-lg-6\"><span class=\"lead\">能力摘要</span><br />
+                        <ul>
+                            <li><strong>建議應該（SHOULD）</strong>支援 <code>create</code>, <code>read</code>,
+                                <code>vread</code>, <code>update</code>.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p />
+            </div>
+        </div>
+    </div>
+    <div class=\"panel panel-default\">
+        <div class=\"panel-heading\">
+            <h4 id=\"Observation1-5\" class=\"panel-title\"><span style=\"float: right;\">預期的遵從度： 建議應該（SHOULD）</span>Observation</h4>
         </div>
         <div class=\"panel-body\">
             <div class=\"container\">
@@ -464,7 +489,7 @@ Usage: #definition
     </div>
     <div class=\"panel panel-default\">
         <div class=\"panel-heading\">
-            <h4 id=\"Specimen1-5\" class=\"panel-title\"><span style=\"float: right;\">預期的遵從度： 建議應該（SHOULD）</span>Specimen</h4>
+            <h4 id=\"Specimen1-6\" class=\"panel-title\"><span style=\"float: right;\">預期的遵從度： 建議應該（SHOULD）</span>Specimen</h4>
         </div>
         <div class=\"panel-body\">
             <div class=\"container\">
@@ -489,7 +514,7 @@ Usage: #definition
     </div>
     <div class=\"panel panel-default\">
         <div class=\"panel-heading\">
-            <h4 id=\"DocumentReference1-6\" class=\"panel-title\"><span style=\"float: right;\">預期的遵從度： 建議應該（SHOULD）</span>DocumentReference</h4>
+            <h4 id=\"DocumentReference1-7\" class=\"panel-title\"><span style=\"float: right;\">預期的遵從度： 建議應該（SHOULD）</span>DocumentReference</h4>
         </div>
         <div class=\"panel-body\">
             <div class=\"container\">
@@ -514,7 +539,7 @@ Usage: #definition
     </div>
     <div class=\"panel panel-default\">
         <div class=\"panel-heading\">
-            <h4 id=\"Coverage1-7\" class=\"panel-title\"><span style=\"float: right;\">預期的遵從度： 建議應該（SHOULD）</span>Coverage</h4>
+            <h4 id=\"Coverage1-8\" class=\"panel-title\"><span style=\"float: right;\">預期的遵從度： 建議應該（SHOULD）</span>Coverage</h4>
         </div>
         <div class=\"panel-body\">
             <div class=\"container\">
