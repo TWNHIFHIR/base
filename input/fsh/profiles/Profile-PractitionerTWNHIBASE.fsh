@@ -1,6 +1,6 @@
 Profile:        PractitionerTWNHIBASE
 Parent:         https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Practitioner-twcore
-Id:             Practitioner-twpas
+Id:             Practitioner-twnhibase
 Title:          "醫事人員-Practitioner TWNHIBASE"
 
 * identifier 1..2

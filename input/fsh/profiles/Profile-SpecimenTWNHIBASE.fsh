@@ -11,4 +11,4 @@ Description:    "此基因檢測檢體-Specimen TWNHIBASE Profile說明本IG如�
 * type from SpecimenType
 * receivedTime ^short = "基因檢測日期"
 * type ^short = "基因檢測檢體類型"
-* collection.collector only Reference(PractitionerTWNHIBASE or TW Core PractitionerRole)
+* collection.collector only Reference(PractitionerTWNHIBASE or TWCorePractitionerRole)
