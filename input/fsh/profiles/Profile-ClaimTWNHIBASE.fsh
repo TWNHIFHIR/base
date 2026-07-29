@@ -3,9 +3,7 @@ Parent:         Claim
 Id:             Claim-twnhibase
 Title:          "事前審查-Claim TWNHIBASE"
 Description:    "此事前審查-Claim TWNHIBASE Profile說明本IG如何進一步定義FHIR的Claim Resource以呈現健保署基礎事前審查之內容"
-* meta 1..1
-* meta.profile 1..1
-* meta.profile = "https://nhicore.nhi.gov.tw/base/StructureDefinition/Claim-twnhibase"
+
 * provider and subType and created and patient MS
 /* extension contains
     https://nhicore.nhi.gov.tw/base/StructureDefinition/extension-claim-encounter named encounter 1..1 MS */

@@ -3,9 +3,7 @@ Parent:         TWCoreDocumentReference
 Id:             DocumentReference-twnhibase
 Title:          "文件參照-DocumentReference TWNHIBASE"
 Description:    "此文件參照-DocumentReference TWNHIBASE Profile說明本IG如何進一步定義臺灣核心-文件參照(TW Core DocumentReference) Profile以呈現健保署基礎之治療計畫文件及基因報告"
-* meta 1..1
-* meta.profile 1..1
-* meta.profile = "https://nhicore.nhi.gov.tw/base/StructureDefinition/DocumentReference-twnhibase"
+
 * category 1..1
 * category.coding 1..1
 * category.coding.code 1..1

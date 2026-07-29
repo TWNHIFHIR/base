@@ -3,9 +3,7 @@ Parent:         Observation
 Id:             Observation-diagnostic-twnhibase
 Title:          "基因資訊-Observation Diagnostic TWNHIBASE"
 Description:    "此基因資訊-Observation Diagnostic TWNHIBASE Profile說明本IG如何進一步定義FHIR的Observation Resource以呈現健保署基礎之基因資訊"
-* meta 1..1
-* meta.profile 1..1
-* meta.profile = "https://nhicore.nhi.gov.tw/base/StructureDefinition/Observation-diagnostic-twnhibase"
+
 * effective[x] only dateTime
 * code.coding 1..1
 * code.coding.code 1..1 MS

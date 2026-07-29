@@ -85,6 +85,23 @@ Usage: #definition
 * rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHOULD
 
+* rest.resource[+].type = #Practitioner
+* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Practitioner-twnhibase"
+* rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #create
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #read
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #vread
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #update
+* rest.resource[=].referencePolicy = #resolves
+
+
 * rest.resource[+].type = #Observation
 * rest.resource[=].profile = "https://nhicore.nhi.gov.tw/base/StructureDefinition/Observation-diagnostic-twnhibase"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
@@ -229,7 +246,17 @@ Usage: #definition
                     <td>name, identifier</td>
                 </tr>
                 <tr>
-                    <td><a href=\"#Observation1-4\">Observation</a></td>
+                    <td><a href=\"#Practitioner1-4\">Practitioner</a></td>
+                    <td><a href=\"StructureDefinition-Practitioner-twnhibase.html\">醫事人員-Practitioner TWNHIBASE</a></td>
+                    <td class=\"text-center\">y</td>
+                    <td class=\"text-center\">y</td>
+                    <td class=\"text-center\">y</td>
+                    <td class=\"text-center\"></td>
+                    <td class=\"text-center\">y</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href=\"#Observation1-5\">Observation</a></td>
                     <td><a href=\"StructureDefinition-Observation-diagnostic-twnhibase.html\">基因資訊-Observation Diagnostic TWNHIBASE</a> </td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
@@ -239,7 +266,7 @@ Usage: #definition
                     <td></td>
                 </tr>
                 <tr>
-                    <td><a href=\"#Specimen1-5\">Specimen</a></td>
+                    <td><a href=\"#Specimen1-6\">Specimen</a></td>
                     <td><a href=\"StructureDefinition-Specimen-twnhibase.html\">基因檢測檢體-Specimen TWNHIBASE</a></td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
@@ -249,7 +276,7 @@ Usage: #definition
                     <td></td>
                 </tr>
                 <tr>
-                    <td><a href=\"#DocumentReference1-6\">DocumentReference</a></td>
+                    <td><a href=\"#DocumentReference1-7\">DocumentReference</a></td>
                     <td><a href=\"StructureDefinition-DocumentReference-twnhibase.html\">文件參照-DocumentReference TWNHIBASE</a></td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
@@ -259,7 +286,7 @@ Usage: #definition
                     <td></td>
                 </tr>
                 <tr>
-                    <td><a href=\"#Coverage1-7\">Coverage</a></td>
+                    <td><a href=\"#Coverage1-8\">Coverage</a></td>
                     <td><a href=\"StructureDefinition-Coverage-twnhibase.html\">健保事前審查計畫-Coverage TWNHIBASE</a></td>
                     <td class=\"text-center\">y</td>
                     <td class=\"text-center\">y</td>
