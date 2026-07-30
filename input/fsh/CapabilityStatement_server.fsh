@@ -95,7 +95,7 @@ Usage: #definition
 * rest.resource[=].searchParam[=].extension.valueCode = #SHOULD
 
 * rest.resource[+].type = #Practitioner
-* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/pas/StructureDefinition/Practitioner-twnhibase"
+* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/base/StructureDefinition/Practitioner-twnhibase"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create

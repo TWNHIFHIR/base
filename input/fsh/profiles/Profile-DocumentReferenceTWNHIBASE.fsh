@@ -14,7 +14,6 @@ Description:    "此文件參照-DocumentReference TWNHIBASE Profile說明本IG�
 * content.attachment.title 0..1 MS 
 * content.attachment.contentType 1..1 MS 
 * content.attachment.contentType ^short = "報告結果-MIMEType"
-//* content.attachment.data ^short = "基因報告／治療計畫文件／檢驗(查)附件／病歷資料（以上文件以base64Binary儲存）。上傳至健保署時不得填入，若醫院不小心上傳，需要先擋掉。"
 * content.attachment.url ^short = "基因報告。（請填寫完整檔案路徑）"
 * content.attachment.url ^example.valueUrl = "file://PathologyReport01.pdf"
 * content.attachment.title ^short = "基因報告名稱。"
